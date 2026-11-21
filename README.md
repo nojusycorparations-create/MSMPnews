@@ -1,1 +1,83 @@
-# MSMPnews
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10051f">
+  <meta name="description" content="The official Mining SMP news and community hub.">
+  <title>MSMP NEWS — Mining SMP Community Hub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">⛏</span><span>MSMP<span class="purple">NEWS</span><small>MINING SMP NETWORK</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#news">News</a><a href="#history">History</a><a href="#server">Server</a><a href="#community">Community</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> THE OFFICIAL MINING SMP NETWORK</div>
+        <h1>THE STORY<br>KEEPS <span class="gradient">MINING.</span></h1>
+        <p class="lead">Your home for Mining SMP news, server updates, community history and memorable moments.</p>
+        <div class="hero-actions"><a class="button primary" href="#news">Explore the news <span>↗</span></a><a class="button secondary" href="#server">Server details</a></div>
+        <div class="hero-meta"><span>OWNER <b>NOJUKAS</b></span><i></i><span>ADMIN <b>MAINFRIEND</b></span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative purple mining emblem">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="crystal">⛏</div><div class="art-label">MINE<br>BUILD<br>EXPLORE</div>
+        <div class="art-tag">EST. IN THE MAKING</div>
+      </div>
+    </section>
+
+    <section class="ticker"><span>MSMP NEWS NETWORK</span><b>✦</b> MINE. BUILD. EXPLORE. REPEAT. <b>✦</b> COMMUNITY FIRST <b>✦</b> NO PvP</section>
+
+    <section class="section" id="news">
+      <div class="section-head"><div><div class="eyebrow">LATEST UPDATES</div><h2>From the <span class="purple">network.</span></h2></div><span class="section-index">01 / NEWS</span></div>
+      <div class="news-grid">
+        <article class="news-card featured"><div class="card-top"><span class="tag">FEATURED STORY</span><span class="date">COMMUNITY ARCHIVE</span></div><div class="news-icon">📜</div><h3>The Mining SMP story so far</h3><p>From the original server address to a growing survival community, revisit the milestones that shaped Mining SMP.</p><a href="#history" class="text-link">Read the history <span>→</span></a></article>
+        <article class="news-card"><div class="card-top"><span class="tag muted-tag">SERVER UPDATE</span><span class="date">SERVER INFO</span></div><div class="news-icon">⚙️</div><h3>Vanilla to PaperMC</h3><p>Mining SMP began on Vanilla and later moved to PaperMC as the server developed.</p><a href="#server" class="text-link">Server details <span>→</span></a></article>
+        <article class="news-card"><div class="card-top"><span class="tag muted-tag">COMMUNITY</span><span class="date">MSMP NETWORK</span></div><div class="news-icon">🎙️</div><h3>MSMP News Network</h3><p>The live studio, ON AIR lever and community updates brought a news channel into the Minecraft world.</p><a href="#community" class="text-link">Explore community <span>→</span></a></article>
+      </div>
+      <p class="note">This starter site uses hand-written updates. Add new stories by editing the news cards in <code>index.html</code>.</p>
+    </section>
+
+    <section class="section history-section" id="history">
+      <div class="section-head"><div><div class="eyebrow">THE ARCHIVE</div><h2>Built one block <span class="purple">at a time.</span></h2></div><span class="section-index">02 / HISTORY</span></div>
+      <div class="timeline">
+        <div class="timeline-item"><span class="timeline-dot"></span><div class="timeline-label">THE BEGINNING</div><h3>The first server address</h3><p>The server originally used <code>nojusy.aternos.me</code>. Nojukas later decided to turn the server into an SMP. The owner later wanted to turn it into an SMP.</p></div>
+        <div class="timeline-item"><span class="timeline-dot"></span><div class="timeline-label">A NEW IDENTITY</div><h3>Mining SMP is born</h3><p>The server address changed to <code>miningsmp.aternos.me</code>, giving the project its Mining SMP identity.</p></div>
+        <div class="timeline-item"><span class="timeline-dot"></span><div class="timeline-label">SERVER EVOLUTION</div><h3>Vanilla → PaperMC</h3><p>Mining SMP started on Vanilla Minecraft and later moved to PaperMC.</p></div>
+        <div class="timeline-item"><span class="timeline-dot"></span><div class="timeline-label">THE WORLD GROWS</div><h3>Builds, attractions and news</h3><p>The world grew with the headquarters, water elevator, owner home projects, mansion, house-building zone, roller coaster and MSMP News studio.</p></div>
+      </div>
+      <div class="history-callout"><span>⛏</span><div><b>AND THIS STORY ISN'T OVER.</b><p>More builds, updates and memories are still ahead.</p></div></div>
+    </section>
+
+    <section class="section server-section" id="server">
+      <div class="section-head"><div><div class="eyebrow">JOIN THE WORLD</div><h2>Mining SMP <span class="purple">server info.</span></h2></div><span class="section-index">03 / SERVER</span></div>
+      <div class="server-panel">
+        <div><div class="server-status"><span class="status-dot"></span> ADDRESS DETAILS</div><h3>Ready to explore?</h3><p>Use the server address below. The live online status and player count are not connected yet, so check Aternos for the current status.</p></div>
+        <div class="ip-box"><span>JAVA SERVER ADDRESS</span><strong id="serverIp">miningsmp.aternos.me</strong><button id="copyIp" class="copy-button">Copy IP</button><small id="copyMessage" aria-live="polite"></small></div>
+      </div>
+      <div class="server-facts"><div><span>PLATFORM</span><b>Minecraft Java</b></div><div><span>SOFTWARE</span><b>PaperMC</b></div><div><span>VERSION</span><b>1.21.4</b></div><div><span>STYLE</span><b>Friendly survival · No PvP</b></div></div>
+      <p class="note">Aternos servers may be offline when nobody has started them. This page does not claim 24/7 server uptime.</p>
+    </section>
+
+    <section class="section community-section" id="community">
+      <div class="section-head"><div><div class="eyebrow">STAY CONNECTED</div><h2>More than <span class="purple">survival.</span></h2></div><span class="section-index">04 / COMMUNITY</span></div>
+      <div class="community-grid">
+        <div class="community-tile"><span>💬</span><h3>Discord</h3><p>Announcements, community conversations and updates.</p><small>Add your Discord invite link here.</small></div>
+        <div class="community-tile"><span>📺</span><h3>TikTok</h3><p>Follow the streams and moments from the world.</p><small>Add your TikTok link here.</small></div>
+        <div class="community-tile"><span>🏆</span><h3>Records</h3><p>Celebrate builds, challenges and community achievements.</p><small>Records page coming soon.</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">⛏</span><span>MSMP<span class="purple">NEWS</span><small>MINING SMP NETWORK</small></span></a><p>MINE. BUILD. EXPLORE. REPEAT.</p><small>Unofficial community website project managed by the Mining SMP team.</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
